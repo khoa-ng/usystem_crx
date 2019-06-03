@@ -1,0 +1,140 @@
+
+ /* content box */
+#tool_tip{
+    background-color: rgba(128, 128, 128, 0.07);
+    border-radius: 4px;
+    padding: 40px 40px 10px 30px;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    /* font-size: 18px; - use only if required
+    /* line-height: 28px; - use only if required */
+}
+
+/* Tooltip */
+.help-tip{
+    position: absolute;
+    color: lightskyblue;
+    text-align: center;
+
+
+    height: 24px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.help-tip:before{
+
+    font-weight: bold;
+    color:#fff;
+}
+
+
+.tooltip{
+    display: none;
+    text-align: left;
+    background-color: #1E2021 !important;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 13px; /* Change the font size inside tooltip */
+    line-height: 1.4;
+    z-index: 9999;
+    opacity: 1;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
+/* Adjust tooltip size on mobile devices */
+@media screen and (max-width: 480px) {
+    .help-tip p{
+        width: 200px;
+    }
+}
+
+/* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 480px; /* Full width */
+    height: 420px; /* Full height */
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.select {
+    margin-left: 250px;
+}
+.filteritem {
+    background-color: rgba(18,19,24,0.5);
+    color: black;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item {
+
+    font-size: 10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+
+/* Modal Content */
+.modal1-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+/* The Close Button */
+.close11 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close11:hover,
+.close11:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.warning {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right:180px;
+    top:55px;
+    border: 1px solid red;
+    display:none;
+}

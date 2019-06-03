@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "SkyPechat",
+  "version": "1.1.0",
+  "description": "This extension makes webskype more useful",
+  "browser_action": {
+    "default_icon": "icons/browser_action_icon.png",
+    "default_title": "Select a template to insert into edit box"
+  },
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.skype.com/*"
+      ],
+      "css": [
+        "fonts/fontawesome/css/all.css",
+        "styles/bootstrap.min.css",
+        "styles/tooltip.css"
+      ],
+      "js": [
+        "scripts/libs/jquery.min.js",
+        "scripts/popper.min.js",
+        "scripts/libs/bootstrap.min.js",
+        "scripts/Tooltip.js",
+        "scripts/mresize.min.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "*://*/*"
+  ],
+  "icons": {
+    "128": "icons/compose_template.png"
+  },
+  "web_accessible_resources": [
+    "icons/*",
+    "fonts/*"
+  ]
+}

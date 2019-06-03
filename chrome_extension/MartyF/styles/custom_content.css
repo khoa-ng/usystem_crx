@@ -1,0 +1,96 @@
+.border-grey {
+    border-bottom: solid 2px rgba(200, 200, 200, 0.8);
+}
+
+.padding-5 {
+    padding: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 48%;
+}
+
+ul.nav-tabs > li {
+    border-bottom: 1px solid #ddd;
+    width: 100px;
+    text-align: center;
+}
+
+ul.nav-tabs > li.active {
+    border-bottom: 1px solid rgba(220, 0, 0, 0.8);
+}
+
+.nav-tabs, .nav-tabs > li > a, .nav-tabs > li > a:hover {
+    border: none !important;
+}
+
+#statusArea {
+    /*
+    position: fixed;
+    bottom: 10px;
+    */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#selectedIndex{
+    font-weight: bolder;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+
+.card button {
+    border: none;
+    outline: 0;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+#templatePreviewArea .row{
+    padding: 2px !important;
+    margin: 2px !important;
+}
+#templatePreviewArea .row div{
+    overflow-x: hidden;
+}
+#templateListArea {
+    height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.btn:before{
+    display: none !important;
+}
+.btn{
+    color: gray !important;
+    margin-left: 2px !important;
+}
+#templateModal *, #loginModal *{
+ /*   font-size: 14px !important;*/
+    text-decoration: none !important;
+}
